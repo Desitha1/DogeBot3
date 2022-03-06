@@ -1713,7 +1713,7 @@ her = `*Hero Details ${body.slice(12)}*
 *Story* : ${res.background_story}`
 reply(her)
 break
-              case 'play':
+              case 'song':
 if (args.length ==0)return reply('Whats the title of the song?')
 bo = args.join(" ")
 reply(mess.wait)
@@ -1741,7 +1741,7 @@ ini = await fetchJson(`https://apikey-bear3.herokuapp.com/api/yt/playmp3?query=$
 mp3 = await getBuffer(ini.url)
 DogeXeonOP.sendMessage(from, mp3, audio, { mimetype: 'audio/mp4', ptt: true, quoted: mek})
 break
-case 'ytmp3':
+case 'yt':
 
 if (args.length < 1) return reply("Where is the link?")
 url = args.join(' ')

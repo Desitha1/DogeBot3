@@ -1741,7 +1741,7 @@ ini = await fetchJson(`https://apikey-bear3.herokuapp.com/api/yt/playmp3?query=$
 mp3 = await getBuffer(ini.url)
 DogeXeonOP.sendMessage(from, mp3, audio, { mimetype: 'audio/mp4', ptt: true, quoted: mek})
 break
-case 'yt':
+case 'ytmp3':
 
 if (args.length < 1) return reply("Where is the link?")
 url = args.join(' ')
